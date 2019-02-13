@@ -24,7 +24,7 @@ class CreateProductsTable extends Migration
             $table->decimal('wholesale_price', 8, 2)->nullable();
             $table->boolean('discount_available')->default(false);
             $table->unsignedTinyInteger('discount')->nullable();
-            $table->boolean('available')->default(true);
+            $table->boolean('enabled')->default(true);
             $table->date('available_date')->nullable();
             $table->unsignedSmallInteger('units_in_stock')->default(0);
             $table->unsignedSmallInteger('units_on_order')->default(0);
